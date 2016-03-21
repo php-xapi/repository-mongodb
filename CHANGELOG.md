@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+0.2.0
+-----
+
+* The documents `MappedStatement` and `MappedVerb` are now located in the
+  `XApi\Repository\Api\Mapping` namespace.
+
+* made the implementation compatible with version 0.2 of the repository API
+
 0.1.1
 -----
 

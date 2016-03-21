@@ -3,11 +3,11 @@
     xsi:schemaLocation="http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping
         http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping.xsd"
 >
-    <document name="Xabbuh\XApi\Storage\Api\Mapping\MappedStatement"
+    <document name="XApi\Repository\Api\Mapping\MappedStatement"
         repository-class="Xabbuh\XApi\Storage\MongoDB\Repository\MappedStatementRepository"
     >
         <field fieldName="id" id="true" type="string" strategy="NONE" />
-        <reference-one field="verb" target-document="Xabbuh\XApi\Storage\Api\Mapping\MappedVerb">
+        <reference-one field="verb" target-document="XApi\Repository\Api\Mapping\MappedVerb">
             <cascade>
                 <persist/>
             </cascade>

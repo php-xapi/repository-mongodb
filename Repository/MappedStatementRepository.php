@@ -12,8 +12,8 @@
 namespace Xabbuh\XApi\Storage\MongoDB\Repository;
 
 use Doctrine\ODM\MongoDB\DocumentRepository;
-use Xabbuh\XApi\Storage\Api\Mapping\MappedStatement;
-use Xabbuh\XApi\Storage\Doctrine\Repository\MappedStatementRepository as MappedStatementRepositoryInteface;
+use XApi\Repository\Api\Mapping\MappedStatement;
+use XApi\Repository\Doctrine\Repository\MappedStatementRepository as MappedStatementRepositoryInteface;
 
 /**
  * A MongoDB backed statement repository.

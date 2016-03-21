@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "33dac18fcea6103902d74a264f352361",
-    "content-hash": "6e874b07a305851f1b543c0baa2bc281",
+    "hash": "8387b38e729d1e055c56cb3c74b3f824",
+    "content-hash": "d7c561e9f701632b709d75467fd2ff20",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -717,21 +717,21 @@
         },
         {
             "name": "php-xapi/repository-api",
-            "version": "v0.1.1",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-xapi/repository-api.git",
-                "reference": "9ea77f2c5f0eb351515d48c58d493916d6445bf3"
+                "reference": "aa3611b62bffcd96c1e17a323fd082d5f34f2906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-xapi/repository-api/zipball/9ea77f2c5f0eb351515d48c58d493916d6445bf3",
-                "reference": "9ea77f2c5f0eb351515d48c58d493916d6445bf3",
+                "url": "https://api.github.com/repos/php-xapi/repository-api/zipball/aa3611b62bffcd96c1e17a323fd082d5f34f2906",
+                "reference": "aa3611b62bffcd96c1e17a323fd082d5f34f2906",
                 "shasum": ""
             },
             "require": {
-                "php-xapi/model": "~0.1",
-                "php-xapi/test-fixtures": "~0.1",
+                "php-xapi/model": "^0.1.0",
+                "php-xapi/test-fixtures": "^0.1.0",
                 "ramsey/uuid": "~2.8"
             },
             "conflict": {
@@ -745,7 +745,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Xabbuh\\XApi\\Storage\\Api\\": ""
+                    "XApi\\Repository\\Api\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -768,26 +768,26 @@
                 "storage",
                 "xAPI"
             ],
-            "time": "2016-03-21 11:56:25"
+            "time": "2016-03-21 16:30:10"
         },
         {
             "name": "php-xapi/repository-doctrine",
-            "version": "v0.1.0",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-xapi/repository-doctrine.git",
-                "reference": "ffb8174c94c38ee62a74d2ccf122bf74b4df5c9f"
+                "reference": "fd2fad012454a66976bb53abb0f415cceb26a5ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-xapi/repository-doctrine/zipball/ffb8174c94c38ee62a74d2ccf122bf74b4df5c9f",
-                "reference": "ffb8174c94c38ee62a74d2ccf122bf74b4df5c9f",
+                "url": "https://api.github.com/repos/php-xapi/repository-doctrine/zipball/fd2fad012454a66976bb53abb0f415cceb26a5ba",
+                "reference": "fd2fad012454a66976bb53abb0f415cceb26a5ba",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.4",
                 "php-xapi/model": "^0.1.0",
-                "php-xapi/repository-api": "^0.1.0"
+                "php-xapi/repository-api": "^0.2.0"
             },
             "conflict": {
                 "xabbuh/xapi-doctrine-storage": "*"
@@ -798,12 +798,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-master": "0.2.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Xabbuh\\XApi\\Storage\\Doctrine\\": ""
+                    "XApi\\Repository\\Doctrine\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -828,7 +828,7 @@
                 "storage",
                 "xAPI"
             ],
-            "time": "2016-03-21 11:02:29"
+            "time": "2016-03-21 20:34:58"
         },
         {
             "name": "php-xapi/test-fixtures",

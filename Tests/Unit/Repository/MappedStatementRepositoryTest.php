@@ -11,8 +11,8 @@
 
 namespace Xabbuh\XApi\Storage\MongoDB\Tests\Unit\Repository;
 
-use Xabbuh\XApi\Storage\Doctrine\Tests\Unit\Repository\MappedStatementRepositoryTest as BaseStatementRepositoryTest;
 use Xabbuh\XApi\Storage\MongoDB\Repository\MappedStatementRepository;
+use XApi\Repository\Doctrine\Test\Unit\Repository\MappedStatementRepositoryTest as BaseStatementRepositoryTest;
 
 /**
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>

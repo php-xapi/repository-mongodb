@@ -17,7 +17,7 @@ use Doctrine\MongoDB\Connection;
 use Doctrine\ODM\MongoDB\Configuration;
 use Doctrine\ODM\MongoDB\DocumentManager;
 use Doctrine\ODM\MongoDB\Mapping\Driver\XmlDriver;
-use Xabbuh\XApi\Storage\Doctrine\Tests\Functional\StatementRepositoryTest as BaseStatementRepositoryTest;
+use XApi\Repository\Doctrine\Test\Functional\StatementRepositoryTest as BaseStatementRepositoryTest;
 
 /**
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>
@@ -35,7 +35,7 @@ class StatementRepositoryTest extends BaseStatementRepositoryTest
         $config->setHydratorDir(__DIR__.'/../hydrators');
         $config->setHydratorNamespace('Hydrator');
         $fileLocator = new SymfonyFileLocator(
-            array(__DIR__.'/../../metadata' => 'Xabbuh\XApi\Storage\Api\Mapping'),
+            array(__DIR__.'/../../metadata' => 'XApi\Repository\Api\Mapping'),
             '.mongodb.xml'
         );
         $driver = new XmlDriver($fileLocator);
@@ -46,6 +46,6 @@ class StatementRepositoryTest extends BaseStatementRepositoryTest
 
     protected function getStatementClassName()
     {
-        return 'Xabbuh\XApi\Storage\Api\Mapping\MappedStatement';
+        return 'XApi\Repository\Api\Mapping\MappedStatement';
     }
 }
