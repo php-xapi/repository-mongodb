@@ -1,4 +1,6 @@
 /phpunit.xml
-/Tests/hydrators
-/Tests/proxies
+/tests/hydrators/*
+!/tests/hydrators/.gitkeep
+/tests/proxies/*
+!/tests/proxies/.gitkeep
 /vendor

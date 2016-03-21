@@ -27,7 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "XApi\\Repository\\MongoDB\\": ""
+            "XApi\\Repository\\MongoDB\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "XApi\\Repository\\MongoDB\\Tests\\": "tests/"
         }
     },
     "extra": {
