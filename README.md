@@ -1,11 +1,11 @@
-MongoDB xAPI Storage Driver
-===========================
+MongoDB xAPI Repository Implementation
+======================================
 
-[![Build Status](https://travis-ci.org/php-xapi/xapi-mongodb-storage.svg?branch=master)](https://travis-ci.org/php-xapi/xapi-mongodb-storage)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-xapi/xapi-mongodb-storage/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/php-xapi/xapi-mongodb-storage/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/php-xapi/xapi-mongodb-storage/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/php-xapi/xapi-mongodb-storage/?branch=master)
+[![Build Status](https://travis-ci.org/php-xapi/repository-mongodb.svg?branch=master)](https://travis-ci.org/php-xapi/repository-mongodb)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/php-xapi/repository-mongodb/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/php-xapi/repository-mongodb/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/php-xapi/repository-mongodb/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/php-xapi/repository-mongodb/?branch=master)
 
-MongoDB driver implementation of an [xAPI storage](https://github.com/php-xapi/xapi-storage-api/).
+MongoDB implementation of an [xAPI repository](https://github.com/php-xapi/repository-api/).
 
 Installation
 ------------
@@ -13,7 +13,5 @@ Installation
 Install the MongoDB driver using Composer:
 
 ```bash
-$ composer require --no-update doctrine/mongodb-odm "~1.0@dev"
-$ composer require --no-update xabbuh/xapi-doctrine-storage "~1.0@dev"
-$ composer require xabbuh/xapi-mongodb-storage "~0.1@dev"
+$ composer require php-xapi/repository-mongodb
 ```

@@ -1,8 +1,8 @@
 {
-    "name": "xabbuh/xapi-mongodb-storage",
-    "description": "MongoDB driver implementation of an xAPI storage",
+    "name": "php-xapi/repository-mongodb",
+    "description": "MongoDB implementation of an xAPI (Experience API) repository",
     "keywords": ["xAPI", "Tin Can API", "Experience API", "storage", "database", "repository", "document", "MongoDB"],
-    "homepage": "https://github.com/php-xapi/xapi-mongodb-storage/",
+    "homepage": "https://github.com/php-xapi/repository-mongodb/",
     "license": "MIT",
     "authors": [
         {
@@ -18,6 +18,9 @@
     },
     "require-dev": {
         "php-xapi/exception": "^0.1.0"
+    },
+    "conflict": {
+        "xabbuh/xapi-mongodb-storage": "*"
     },
     "provide": {
         "php-xapi/repository-implementation": "1.0"
