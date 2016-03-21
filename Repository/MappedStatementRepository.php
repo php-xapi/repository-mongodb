@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Xabbuh\XApi\Storage\MongoDB\Repository;
+namespace XApi\Repository\MongoDB\Repository;
 
 use Doctrine\ODM\MongoDB\DocumentRepository;
 use XApi\Repository\Api\Mapping\MappedStatement;

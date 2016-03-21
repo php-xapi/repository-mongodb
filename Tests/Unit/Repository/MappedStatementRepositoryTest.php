@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Xabbuh\XApi\Storage\MongoDB\Tests\Unit\Repository;
+namespace XApi\Repository\MongoDB\Tests\Unit\Repository;
 
-use Xabbuh\XApi\Storage\MongoDB\Repository\MappedStatementRepository;
 use XApi\Repository\Doctrine\Test\Unit\Repository\MappedStatementRepositoryTest as BaseStatementRepositoryTest;
+use XApi\Repository\MongoDB\Repository\MappedStatementRepository;
 
 /**
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>

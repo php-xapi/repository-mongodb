@@ -4,6 +4,9 @@ CHANGELOG
 0.2.0
 -----
 
+* The base namespace was changed from `Xabbuh\XApi\Storage\MongoDB` to
+  `XApi\Repository\MongoDB`.
+
 * The documents `MappedStatement` and `MappedVerb` are now located in the
   `XApi\Repository\Api\Mapping` namespace.
 

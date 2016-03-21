@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Xabbuh\\XApi\\Storage\\MongoDB\\": ""
+            "XApi\\Repository\\MongoDB\\": ""
         }
     },
     "extra": {

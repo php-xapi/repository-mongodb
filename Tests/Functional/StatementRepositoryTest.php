@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Xabbuh\XApi\Storage\MongoDB\Tests\Functional;
+namespace XApi\Repository\MongoDB\Tests\Functional;
 
 use Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator;
 use Doctrine\Common\Persistence\ObjectManager;
