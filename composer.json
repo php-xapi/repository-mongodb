@@ -23,7 +23,7 @@
         "xabbuh/xapi-mongodb-storage": "*"
     },
     "provide": {
-        "php-xapi/repository-implementation": "1.0"
+        "php-xapi/repository-implementation": "0.1"
     },
     "autoload": {
         "psr-4": {
