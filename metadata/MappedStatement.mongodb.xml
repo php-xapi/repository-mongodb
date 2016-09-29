@@ -4,7 +4,7 @@
         http://doctrine-project.org/schemas/odm/doctrine-mongo-mapping.xsd"
 >
     <document name="XApi\Repository\Api\Mapping\MappedStatement"
-        repository-class="XApi\Repository\MongoDB\Repository\MappedStatementRepository"
+        repository-class="XApi\Repository\MongoDB\Repository\StatementRepository"
     >
         <field fieldName="id" id="true" type="string" strategy="NONE" />
         <reference-one field="verb" target-document="XApi\Repository\Api\Mapping\MappedVerb">

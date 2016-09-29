@@ -1,6 +1,17 @@
 CHANGELOG
 =========
 
+0.3.0
+-----
+
+* The `StatementRepository` class is final.
+
+* The version of the virtual `php-xapi/repository-implementation` package
+  provided by this package has been raised to `0.3`.
+
+* The versions of the `php-xapi/repository-api` and `php-xapi/repository-doctrine`
+  requirements have been raised to `^0.3`.
+
 0.2.0
 -----
 
