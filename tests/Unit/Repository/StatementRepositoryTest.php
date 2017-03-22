@@ -11,13 +11,13 @@
 
 namespace XApi\Repository\MongoDB\Tests\Unit\Repository;
 
-use XApi\Repository\Doctrine\Test\Unit\Repository\MappedStatementRepositoryTest as BaseStatementRepositoryTest;
-use XApi\Repository\MongoDB\Repository\MappedStatementRepository;
+use XApi\Repository\Doctrine\Test\Unit\Repository\Mapping\StatementRepositoryTest as BaseStatementRepositoryTest;
+use XApi\Repository\MongoDB\Repository\StatementRepository;
 
 /**
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>
  */
-class MappedStatementRepositoryTest extends BaseStatementRepositoryTest
+class StatementRepositoryTest extends BaseStatementRepositoryTest
 {
     protected function getObjectManagerClass()
     {
@@ -36,6 +36,6 @@ class MappedStatementRepositoryTest extends BaseStatementRepositoryTest
 
     protected function createMappedStatementRepository($objectManager, $unitOfWork, $classMetadata)
     {
-        return new MappedStatementRepository($objectManager, $unitOfWork, $classMetadata);
+        return new StatementRepository($objectManager, $unitOfWork, $classMetadata);
     }
 }

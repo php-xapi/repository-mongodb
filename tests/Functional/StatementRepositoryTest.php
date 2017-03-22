@@ -35,7 +35,7 @@ class StatementRepositoryTest extends BaseStatementRepositoryTest
         $config->setHydratorDir(__DIR__.'/../hydrators');
         $config->setHydratorNamespace('Hydrator');
         $fileLocator = new SymfonyFileLocator(
-            array(__DIR__.'/../../metadata' => 'XApi\Repository\Api\Mapping'),
+            array(__DIR__.'/../../metadata' => 'XApi\Repository\Doctrine\Mapping'),
             '.mongodb.xml'
         );
         $driver = new XmlDriver($fileLocator);
@@ -46,6 +46,6 @@ class StatementRepositoryTest extends BaseStatementRepositoryTest
 
     protected function getStatementClassName()
     {
-        return 'XApi\Repository\Api\Mapping\MappedStatement';
+        return 'XApi\Repository\Doctrine\Mapping\Statement';
     }
 }

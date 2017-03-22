@@ -12,36 +12,36 @@
 namespace XApi\Repository\MongoDB\Repository;
 
 use Doctrine\ODM\MongoDB\DocumentRepository;
-use XApi\Repository\Api\Mapping\MappedStatement;
-use XApi\Repository\Doctrine\Repository\MappedStatementRepository as MappedStatementRepositoryInteface;
+use XApi\Repository\Doctrine\Mapping\Statement;
+use XApi\Repository\Doctrine\Repository\Mapping\StatementRepository as StatementRepositoryInterface;
 
 /**
  * A MongoDB backed statement repository.
  *
  * @author Christian Flothmann <christian.flothmann@xabbuh.de>
  */
-class MappedStatementRepository extends DocumentRepository implements MappedStatementRepositoryInteface
+final class StatementRepository extends DocumentRepository implements StatementRepositoryInterface
 {
     /**
      * {@inheritdoc}
      */
-    public function findMappedStatement(array $criteria)
+    public function findStatement(array $criteria)
     {
-        return parent::findOneBy($criteria);
+        return $this->findOneBy($criteria);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function findMappedStatements(array $criteria)
+    public function findStatements(array $criteria)
     {
-        return parent::findBy($criteria);
+        return $this->findBy($criteria);
     }
 
     /**
      * {@inheritdoc}
      */
-    public function storeMappedStatement(MappedStatement $mappedStatement, $flush = true)
+    public function storeStatement(Statement $mappedStatement, $flush = true)
     {
         $this->getDocumentManager()->persist($mappedStatement);
 
